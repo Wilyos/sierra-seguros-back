@@ -21,7 +21,7 @@ app.post('/send', async (req, res) => {
   try {
     await transporter.sendMail({
       from: '"Formulario Web" <correos.sistemaslit@gmail.com>',
-      to: 'contacto@sistemaslitograficos.com', // correo del tercero
+      to: 'administradora@sierraseguros.com', // correo del tercero
       subject: 'Nuevo mensaje de contacto',
       html: `
         <h3>Nuevo mensaje de contacto</h3>

@@ -10,8 +10,8 @@ app.use(cors());
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'wilbg99@gmail.com',
-    pass: 'milo970401' // Usa contraseña de aplicación, no la normal
+    user: 'correos.sistemaslit@gmail.com',
+    pass: 'lokf csuu gnmr wegf' // Usa contraseña de aplicación, no la normal
   }
 });
 
@@ -20,7 +20,7 @@ app.post('/send', async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: '"Formulario Web" <wilbg99@gmail.com>',
+      from: '"Formulario Web" <correos.sistemaslit@gmail.com>',
       to: 'contacto@sistemaslitograficos.com', // correo del tercero
       subject: 'Nuevo mensaje de contacto',
       html: `
